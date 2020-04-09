@@ -123,10 +123,9 @@ function componentMaker({title, date, firstParagraph, secondParagraph, thirdPara
     
 //////classes
 
-    articleDiv.classList.add('.article')
-    paragraph1.classList.add('.date')
-    paragraph2.classList.add('.date')
-    paragraph3.classList.add('.date')
+    articleDiv.classList.add('article')
+    articleDate.classList.add('date')
+    expandButton1.classList.add('expandButton')
 
     //////// text content
 
@@ -135,7 +134,7 @@ function componentMaker({title, date, firstParagraph, secondParagraph, thirdPara
     paragraph1.textContent = firstParagraph
     paragraph2.textContent = secondParagraph
     paragraph3.textContent = thirdParagraph
-    expandButton1.textContent = "expand!!!!!"
+    expandButton1.textContent = 'expand!!!!!'
 
 
 
@@ -157,7 +156,7 @@ function componentMaker({title, date, firstParagraph, secondParagraph, thirdPara
     return articleDiv
 }
 
-  componentMaker({})
+  
 
 /*
 
@@ -181,5 +180,4 @@ articleElements.forEach(articleElements => {
 
 */
 
-  
   
