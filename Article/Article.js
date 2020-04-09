@@ -1,3 +1,7 @@
+
+
+
+
 /* This is the data we will be using to create our article components */
 /* Look over this data, then proceed to line 91*/
 const data = [
@@ -99,7 +103,32 @@ const data = [
     <span class='expandButton'></span>
   </div>
 */
+const para = {
+  title: 'Lambda School Students: "We\'re the best!"',
+  date: 'Nov 5th, 2018',
+  firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth Qui - gonn
+      jar twi'lek jinn leia jango skywalker mon.`,
 
+  secondParagraph: `Grievous fett calamari anakin skywalker hutt.Alderaan darth kenobi darth r2- d2
+      anakin watto.Yavin jawa sebulba
+      owen jinn tatooine sith organa.`,
+
+  thirdParagraph: `Dagobah hutt jawa leia calamari ventress skywalker yoda. rievous lando coruscant. Jinn darth palpatine obi-wan mon.`
+}
+
+const nick = {
+  title: 'Nick',
+  date: 'Stuff',
+  firstParagraph: 'paragraph'
+}
+
+  const paragraphMaker = (article) => {
+    data.push(article);
+  }
+
+
+paragraphMaker(para);
+paragraphMaker(nick);
 
 function componentMaker({title, date, firstParagraph, secondParagraph, thirdParagraph}){
 
@@ -172,7 +201,6 @@ articleElements.forEach(articleElements => {
 
 /*
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
-
 */
 
-  
+
